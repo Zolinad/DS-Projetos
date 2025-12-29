@@ -1,9 +1,20 @@
-projeto-2-geomarketing/readme.md
-
 import streamlit as st
+#-----------------------------------------------------
+def exibir_readme(caminho_readme):
+    with open(caminho_readme, "r", encoding="utf-8") as f:
+        conteudo = f.read()
+    with st.expander("📖 Sobre este Projeto (Documentação)", expanded=True):
+        st.markdown(conteudo)
+#-----------------------------------------------------
 import pandas as pd
 import numpy as np
 import plotly.express as px
+#-----------------------------------------------------
+# 1. Título do App
+st.title(" Geomarketing")
+exibir_readme("projeto-2-geomarketing/readme.md") 
+st.divider() # Uma linha para separar a explicação do dashboard real
+#-----------------------------------------------------
 
 # Configuração da Página
 st.set_page_config(layout='wide', page_title="Geomarketing: Belém & Ananindeua")
