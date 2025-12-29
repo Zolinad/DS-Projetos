@@ -10,9 +10,9 @@ Repositório central de projetos focados em **soluções de negócio** e **tomad
 | :--- | :--- | :--- | :--- |
 | [**1. Predição de Churn**](./projeto-1-churn) | Vendas / Telecom | Modelo preditivo para identificar clientes com alto risco de cancelamento. | `Scikit-Learn` `Random Forest` |
 | [**2. Geomarketing & Expansão**](./projeto-2-geomarketing) | Varejo / Urbanismo | Análise geoespacial para identificar "vazios de mercado" e otimizar novos pontos. | `Plotly Mapbox` `Clustering` |
-| [**3. Auditoria Financeira AI**](./projeto-3-auditoria) | Finanças / Compliance | Detecção automática de fraudes e anomalias em transações corporativas. | `Isolation Forest` `Unsupervised ML` |
+| [**3. Auditoria Financeira & Anomalias com IA**](./projeto-3-auditoria) | Finanças / Compliance | Detecção automática de fraudes e anomalias em transações corporativas. | `Isolation Forest` `Unsupervised ML` |
 | [**4. Dashboard Estratégico**](./projeto-4-dashboard-kpi) | Gestão / Varejo | Painel de KPIs hierárquicos para monitoramento de metas e qualidade. | `Streamlit` `Business Intelligence` |
-| [**5. Logistics Analytics**](./projeto-5-logistica) | Logística / E-commerce | Análise estatística de prazos de entrega (Lead Time) com dados reais da Olist. | `Pandas` `Estatística Descritiva` |
+| [**5. Análise Logística**](./projeto-5-logistica) | Logística / E-commerce | Análise estatística de prazos de entrega (Lead Time) com dados reais da Olist. | `Pandas` `Estatística Descritiva` |
 
 ---
 
