@@ -1,20 +1,7 @@
 import streamlit as st
-#-----------------------------------------------------
-def exibir_readme(caminho_readme):
-    with open(caminho_readme, "r", encoding="utf-8") as f:
-        conteudo = f.read()
-    with st.expander("📖 Sobre este Projeto (Documentação)", expanded=True):
-        st.markdown(conteudo)
-#-----------------------------------------------------
 import pandas as pd
 import numpy as np
 import plotly.express as px
-#-----------------------------------------------------
-# 1. Título do App
-st.title("🗺️ Geomarketing")
-exibir_readme("projeto-2-geomarketing/readme.md") 
-st.divider() # Uma linha para separar a explicação do dashboard real
-#-----------------------------------------------------
 
 # Configuração da Página
 st.set_page_config(layout='wide', page_title="Geomarketing: Belém & Ananindeua")
@@ -162,3 +149,21 @@ if pagina == 'Base de Dados':
     pagina_dados_brutos_v2()
 else:
     pagina_dashboard_v2()
+
+#-----------------------------------------------------------
+st.divider() # Uma linha visual para separar o App da documentação
+
+# 2. DOCUMENTAÇÃO (Vem no final)
+PATH_README = "projeto-1-churn/readme.md"
+
+def exibir_readme(caminho):
+    try:
+        with open(caminho, "r", encoding="utf-8") as f:
+            conteudo = f.read()
+        # Usamos um expander "fechado" para não esticar demais a página
+        with st.expander("📖 Detalhes Técnicos e Metodologia (README)", expanded=False):
+            st.markdown(conteudo)
+    except FileNotFoundError:
+        st.error("Documentação não encontrada.")
+
+exibir_readme(PATH_README)
