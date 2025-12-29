@@ -26,9 +26,3 @@ A técnica de Detecção de Anomalias (Anomaly Detection) aqui aplicada é funda
 * **Frontend:** Streamlit
 * **Machine Learning:** Scikit-Learn (Ensemble Isolation Forest)
 * **Visualização:** Plotly Express
-
-## Como Rodar o Projeto
-
-1. Clone este repositório:
-```bash
-git clone [https://github.com/SEU-USUARIO/audit-ai.git](https://github.com/SEU-USUARIO/audit-ai.git)
