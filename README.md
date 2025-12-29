@@ -1,32 +1,34 @@
-# Sistema de Predição de CHURN
+# 📊 Portfólio de Ciência de Dados
 
+Repositório central de projetos focados em **soluções de negócio** e **tomada de decisão estratégica**. Aqui reúno aplicações práticas de Machine Learning, Análise Estatística e Visualização de Dados.
 
-## Sobre o Projeto
-Este é um projeto de **Business Analytics** focado na retenção de clientes. Desenvolvi uma aplicação web interativa que utiliza Machine Learning para prever a probabilidade de **Churn** (cancelamento de contrato) com base em padrões comportamentais e financeiros.
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
+![Status](https://img.shields.io/badge/Status-Em_Desenvolvimento-yellow)
 
-O objetivo é fornecer aos gestores uma ferramenta simples para simular cenários e identificar perfis de risco antes que o cliente deixe a empresa.
+---
 
-## Funcionalidades
-* **Geração de Dados Sintéticos:** O sistema não depende de arquivos externos; ele simula uma base de dados realista de telecomunicações para treinamento em tempo real (pelo usuário).
-* **Modelo Preditivo:** Utiliza o algoritmo **Random Forest Classifier** para classificar o risco.
-* **Simulador Interativo:** Interface amigável onde o usuário pode alterar variáveis (mensalidade, chamados ao suporte, tempo de casa) e ver a probabilidade de cancelamento mudar instantaneamente.
-* **Diagnóstico Automático:** O sistema sugere ações de retenção (ex: descontos ou upgrade) baseadas no nível de risco calculado.
+## 📂 Índice de Projetos
 
-## Lógica e Aplicabilidade (Transfer Learning)
-Embora este dashboard esteja configurado para um cenário de **Telecomunicações**, a arquitetura matemática desenvolvida é agnóstica e transferível para outros setores que lidam com análise de risco e evasão:
+| Projeto | Domínio | Descrição Rápida | Stack Principal |
+| :--- | :--- | :--- | :--- |
+| [**1. Predição de Churn**](./projeto-1-churn) | 🏢 Vendas / Telecom | Modelo preditivo para identificar clientes com alto risco de cancelamento. | `Scikit-Learn` `Random Forest` |
+| [**2. Geomarketing & Expansão**](./projeto-2-geomarketing) | 🗺️ Varejo / Urbanismo | Análise geoespacial para identificar "vazios de mercado" e otimizar novos pontos. | `Plotly Mapbox` `Clustering` |
+| [**3. Auditoria Financeira AI**](./projeto-3-auditoria) | 🛡️ Finanças / Compliance | Detecção automática de fraudes e anomalias em transações corporativas. | `Isolation Forest` `Unsupervised ML` |
+| [**4. Dashboard Estratégico**](./projeto-4-dashboard-kpi) | 📈 Gestão / Varejo | Painel de KPIs hierárquicos para monitoramento de metas e qualidade. | `Streamlit` `Business Intelligence` |
+| [**5. Logistics Analytics**](./projeto-5-logistica) | 📦 Logística / E-commerce | Análise estatística de prazos de entrega (Lead Time) com dados reais da Olist. | `Pandas` `Estatística Descritiva` |
 
-1.  **Setor Corporativo:** Rotatividade de Funcionários (Turnover).
-2.  **Setor Financeiro:** Detecção de Fraudes ou Inadimplência.
-3.  **Setor Público / Educação:** Predição de **Evasão Escolar** (substituindo "Fatura" por "Notas" e "Suporte" por "Faltas").
+---
 
-## Tecnologias Utilizadas
-* **Linguagem:** Python
-* **Frontend:** Streamlit
-* **Manipulação de Dados:** Pandas / NumPy
-* **Machine Learning:** Scikit-Learn (Random Forest)
+## 🛠️ Competências Técnicas
 
-## Como Rodar o Projeto
+* **Linguagens:** Python (Foco em Análise de Dados).
+* **Frameworks Web:** Streamlit (Criação de Web Apps Interativos).
+* **Machine Learning:** Classificação, Regressão, Detecção de Anomalias.
+* **Negócios:** KPIs, Auditoria, Geomarketing, Logística.
 
-1. Clone este repositório:
-```bash
-git clone [https://github.com/SEU-USUARIO/churn-prediction.git](https://github.com/SEU-USUARIO/churn-prediction.git)
+---
+
+## 📫 Contato
+
+* **LinkedIn:** [Seu Nome](https://linkedin.com/in/seu-perfil)
+* **Email:** seu.email@exemplo.com
