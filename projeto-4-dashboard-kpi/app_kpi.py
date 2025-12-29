@@ -38,7 +38,7 @@ def gerar_dados_vendas():
     return df
 
 # --- 2. INTERFACE E LÓGICA ---
-st.title("📈 Dashboard Estratégico de Vendas & KPIs")
+st.title("Dashboard Estratégico para Vendas: monitoramento de KPI's")
 st.markdown("Monitoramento de performance hierárquica: Região > Categoria > Rentabilidade.")
 
 df = gerar_dados_vendas()
