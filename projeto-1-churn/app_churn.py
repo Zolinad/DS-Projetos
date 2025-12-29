@@ -1,3 +1,11 @@
+def exibir_readme(caminho_readme):
+    with open(caminho_readme, "r", encoding="utf-8") as f:
+        conteudo = f.read()
+    
+    # Criamos um "Expander" (menu retrátil) para o README não ocupar a tela toda
+    with st.expander("📖 Sobre este Projeto (Documentação)", expanded=True):
+        st.markdown(conteudo)
+
 import streamlit as st
 import pandas as pd
 import numpy as np
