@@ -12,7 +12,7 @@ import plotly.express as px
 from sklearn.ensemble import IsolationForest
 #-----------------------------------------------------
 # 1. Título do App
-st.title("Auditoria Financeira e Detecção de Anomalia com AI")
+st.title("🛡️ Auditoria Financeira e Detecção de Anomalia com AI")
 exibir_readme("projeto-3-auditoria/readme.md") 
 st.divider() # Uma linha para separar a explicação do dashboard real
 #-----------------------------------------------------
