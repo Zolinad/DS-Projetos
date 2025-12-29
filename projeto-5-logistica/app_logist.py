@@ -4,7 +4,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 
 # Configuração da Página
-st.set_page_config(layout='wide', page_title="Logística: Estatísticas do Tempo de Entrega")
+st.set_page_config(layout='wide', page_title="Logística de Comércio Real: Estatísticas do Tempo de Entrega")
 
 # --- 1. Conexão com os Dados Reais ---
 @st.cache_data
@@ -48,7 +48,7 @@ def carregar_dados_olist():
         return pd.DataFrame()
 
 # --- 3. DASHBOARD ---
-st.title("Dashboard de Logística Real (baseado no Olist E-Commerce)")
+st.title("Logística de Comércio Real: Estatísticas do Tempo de Entrega")
 st.markdown(f"""
 Este painel consome dados **reais** do repositório público da Olist.
 Análise focada no **Tempo de Entrega (Lead Time)** de 100k pedidos.
