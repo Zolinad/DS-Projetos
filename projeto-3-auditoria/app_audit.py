@@ -1,21 +1,8 @@
 import streamlit as st
-#-----------------------------------------------------
-def exibir_readme(caminho_readme):
-    with open(caminho_readme, "r", encoding="utf-8") as f:
-        conteudo = f.read()
-    with st.expander("📖 Sobre este Projeto (Documentação)", expanded=True):
-        st.markdown(conteudo)
-#-----------------------------------------------------
 import pandas as pd
 import numpy as np
 import plotly.express as px
 from sklearn.ensemble import IsolationForest
-#-----------------------------------------------------
-# 1. Título do App
-st.title("🛡️ Auditoria Financeira e Detecção de Anomalia com AI")
-exibir_readme("projeto-3-auditoria/readme.md") 
-st.divider() # Uma linha para separar a explicação do dashboard real
-#-----------------------------------------------------
 
 # Configuração da Página
 st.set_page_config(layout='wide', page_title="Corporate Audit: Anomaly Detection")
@@ -125,4 +112,22 @@ with col_table2:
     fig_bar.update_layout(showlegend=False)
     st.plotly_chart(fig_bar, use_container_width=True)
 
-st.info("ℹ️ **Lógica do Algoritmo:** O modelo aprende o padrão de gasto 'comum' (R$ 500 a R$ 2.000). Valores muito acima (ex: R$ 12.000) ou muito discrepantes são isolados geometricamente.")
+st.info("**Lógica do Algoritmo:** O modelo aprende o padrão de gasto 'comum' (R$ 500 a R$ 2.000). Valores muito acima (ex: R$ 12.000) ou muito discrepantes são isolados geometricamente.")
+
+#-----------------------------------------------------------------
+st.divider() # Uma linha visual para separar o App da documentação
+
+# 2. DOCUMENTAÇÃO (Vem no final)
+PATH_README = "projeto-1-churn/readme.md"
+
+def exibir_readme(caminho):
+    try:
+        with open(caminho, "r", encoding="utf-8") as f:
+            conteudo = f.read()
+        # Usamos um expander "fechado" para não esticar demais a página
+        with st.expander("📖 Detalhes Técnicos e Metodologia (README)", expanded=False):
+            st.markdown(conteudo)
+    except FileNotFoundError:
+        st.error("Documentação não encontrada.")
+
+exibir_readme(PATH_README)
