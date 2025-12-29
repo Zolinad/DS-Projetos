@@ -1,4 +1,4 @@
-# 📊 Portfólio de Ciência de Dados
+# Portfólio de Ciência de Dados
 
 Repositório central de projetos focados em **soluções de negócio** e **tomada de decisão estratégica**. Aqui reúno aplicações práticas de Machine Learning, Análise Estatística e Visualização de Dados.
 
@@ -7,7 +7,7 @@ Repositório central de projetos focados em **soluções de negócio** e **tomad
 
 ---
 
-## 📂 Índice de Projetos
+## Índice de Projetos
 
 | Projeto | Domínio | Descrição Rápida | Stack Principal |
 | :--- | :--- | :--- | :--- |
@@ -19,7 +19,7 @@ Repositório central de projetos focados em **soluções de negócio** e **tomad
 
 ---
 
-## 🛠️ Competências Técnicas
+## Competências Técnicas
 
 * **Linguagens:** Python (Foco em Análise de Dados).
 * **Frameworks Web:** Streamlit (Criação de Web Apps Interativos).
@@ -28,7 +28,7 @@ Repositório central de projetos focados em **soluções de negócio** e **tomad
 
 ---
 
-## 📫 Contato
+## Contato
 
-* **LinkedIn:** [Seu Nome](https://linkedin.com/in/seu-perfil)
-* **Email:** seu.email@exemplo.com
+* **LinkedIn:** [Danilo Azevedo Figueiredo](https://linkedin.com/in/danilo-a-fig)
+* **Email:** daniloz.fig@gmail.com
