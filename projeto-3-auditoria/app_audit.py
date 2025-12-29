@@ -5,7 +5,7 @@ import plotly.express as px
 from sklearn.ensemble import IsolationForest
 
 # Configuração da Página
-st.set_page_config(layout='wide', page_title="Corporate Audit: Anomaly Detection")
+st.set_page_config(layout='wide', page_title="Auditoria Financeira e Detecção de Anomalia com AI")
 
 # --- 1. GERAR DADOS FINANCEIROS SINTÉTICOS ---
 @st.cache_data
