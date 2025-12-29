@@ -4,7 +4,7 @@ import numpy as np
 import plotly.express as px
 
 # Configuração da Página
-st.set_page_config(layout='wide', page_title="Geomarketing: Belém & Ananindeua")
+st.set_page_config(layout='wide', page_title="Inteligência de Varejo: Geomarketing Dashboard")
 
 # FUNÇÃO GERADORA DE DADOS (COM CORREÇÃO GEOGRÁFICA)
 @st.cache_data
