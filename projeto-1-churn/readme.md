@@ -23,9 +23,3 @@ Embora este dashboard esteja configurado para um cenário de **Telecomunicaçõe
 * **Frontend:** Streamlit
 * **Manipulação de Dados:** Pandas / NumPy
 * **Machine Learning:** Scikit-Learn (Random Forest)
-
-## Como Rodar o Projeto
-
-1. Clone este repositório:
-```bash
-git clone [https://github.com/SEU-USUARIO/churn-prediction.git](https://github.com/SEU-USUARIO/churn-prediction.git)
