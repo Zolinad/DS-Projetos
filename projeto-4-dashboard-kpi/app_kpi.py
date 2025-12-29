@@ -115,3 +115,21 @@ st.info("""
 * **Eixo Y do Gráfico de Bolhas:** Representa a eficiência (Margem/Qualidade).
 * **Barra Lateral:** Permite o detalhamento e filtragem dos dados.
 """)
+
+#---------------------------------------
+st.divider() # Uma linha visual para separar o App da documentação
+
+# 2. DOCUMENTAÇÃO (Vem no final)
+PATH_README = "projeto-1-churn/README.md"
+
+def exibir_readme(caminho):
+    try:
+        with open(caminho, "r", encoding="utf-8") as f:
+            conteudo = f.read()
+        # Usamos um expander "fechado" para não esticar demais a página
+        with st.expander("📖 Detalhes Técnicos e Metodologia (README)", expanded=False):
+            st.markdown(conteudo)
+    except FileNotFoundError:
+        st.error("Documentação não encontrada.")
+
+exibir_readme(PATH_README)
