@@ -1,20 +1,7 @@
 import streamlit as st
-#-----------------------------------------------------
-def exibir_readme(caminho_readme):
-    with open(caminho_readme, "r", encoding="utf-8") as f:
-        conteudo = f.read()
-    with st.expander("📖 Sobre este Projeto (Documentação)", expanded=True):
-        st.markdown(conteudo)
-#-----------------------------------------------------
 import pandas as pd
 import numpy as np
 from sklearn.ensemble import RandomForestClassifier
-#-----------------------------------------------------
-# 1. Título do App
-st.title("👥 Predição de Churn")
-exibir_readme("projeto-1-churn/readme.md") 
-st.divider() # Uma linha para separar a explicação do dashboard real
-#-----------------------------------------------------
 
 # --- 1. GERAR DADOS FICTÍCIOS (Para funcionar sem baixar nada) ---
 # Criados 200 clientes falsos para o treinamento do modelo
@@ -79,3 +66,21 @@ with col2:
         else:
             st.success("RISCO BAIXO: Cliente Fidelizado.")
             st.write("**Situação:** O cliente apresenta comportamento estável.")
+
+#---------------------------------------
+st.divider() # Uma linha visual para separar o App da documentação
+
+# 2. DOCUMENTAÇÃO (Vem no final)
+PATH_README = "projeto-4-dashboard-kpi/readme.md"
+
+def exibir_readme(caminho):
+    try:
+        with open(caminho, "r", encoding="utf-8") as f:
+            conteudo = f.read()
+        # Usamos um expander "fechado" para não esticar demais a página
+        with st.expander("📖 Detalhes Técnicos e Metodologia (README)", expanded=False):
+            st.markdown(conteudo)
+    except FileNotFoundError:
+        st.error("Documentação não encontrada.")
+
+exibir_readme(PATH_README)
