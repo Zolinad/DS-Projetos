@@ -4,7 +4,7 @@ import streamlit as st
 st.set_page_config(layout="wide", page_title="Portfólio de Data Science - Danilo A. F.")
 
 # 2. CABEÇALHO COM ALINHAMENTO VERTICAL
-# O parâmetro vertical_alignment="center" garante que os botões fiquem centralizados com o texto
+# O parâmetro vertical_alignment="center" para centralizar os botões com o texto
 col1, col2 = st.columns([3, 1], vertical_alignment="center")
 
 with col1:
@@ -14,11 +14,10 @@ with col1:
     st.caption("Portifólio de projetos com análise de dados, algoritmos de machine learning e business intelligence.")
 
 with col2:
-    # Removido o st.write("") anterior para não empurrar os botões erradamente
     st.markdown(f"""
         <div style="text-align: right;">
             <a href="https://www.linkedin.com/in/danilo-a-fig" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" style="margin-bottom: 5px; height: 28px;"></a>
-            <a href="https://github.com/Zolinad" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" style="height: 28px;"></a>
+            <a href="https://github.com/Zolinad/DS-Projetos" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" style="height: 28px;"></a>
         </div>
     """, unsafe_allow_html=True)
 
